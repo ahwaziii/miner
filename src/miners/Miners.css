@@ -1,0 +1,114 @@
+
+.body{
+    background-color: rgb(246, 246, 246);
+    width: 1000px;
+    height: 100%;
+    margin: 5% 0% 0% 5%;
+    border-radius: 20px; 
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: solid 1px rgb(233, 191, 133);
+    box-shadow: 0 0 30px rgba(254, 249, 249, 1);
+}
+.all-item{
+    height: 320px;
+    width: 470px;
+    border-radius: 3px;
+    margin: 8px;
+    transition: all ease-in-out 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: solid 1px rgb(222, 215, 205);
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.2);
+}
+.all-item:hover{
+    
+    cursor: pointer;
+
+    
+}
+.div-miner{
+    height: 300px;
+    width: 180px;
+    
+    
+}
+.details{
+    height: 100%;
+    width: 290px;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.contetnt-miner{
+    text-align: center;
+    align-items: center;
+    height: 150px;
+    width: 170px;
+}
+.contetnt-miner img{
+    height: 150px;
+    width: 170px;
+    margin: 5px;
+}
+.name-miner a{
+    font-weight: bold;
+    color: rgb(69, 63, 63);
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+}
+.name-miner a:hover{
+    color: hsl(24, 99%, 50% ,0.7);
+    transition: 0.4s;
+}
+.span-offer{
+    text-decoration: line-through;
+    font-size: 18px;
+}
+.span-sell-price span{
+    color: hsl(24, 99%, 50% ,0.7); ;
+}
+.toman{
+    font-weight: bold;
+    font-size: 12px;
+}
+.sell-price{
+    font-size: 18px;
+    font-weight: bold;
+}
+.detail-mine{
+   width: 290px;
+   height: 100%px;
+   
+}
+/* .about-miner{
+    width: 70px;
+    height: 100%;
+    background-color: orange;
+    border-radius:2px;
+    
+} */
+.div-imfomiton{
+    height: 45px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 7px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+}
+.inside-div-imfomiton{
+    height: 45px;
+    width: 97%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,13 @@
+.header-navbar{
+    width: 100%;
+    height: 70px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+.div-content-navbar{
+    width: 90%;
+    height: 55px;
+    background-color: blueviolet;
+    margin: auto;
+}
