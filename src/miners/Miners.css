@@ -94,7 +94,7 @@
     border-radius:2px;
     
 } */
-.div-imfomiton{
+.div-infomotion{
     height: 45px;
     width: 100%;
     position: relative;
@@ -104,7 +104,7 @@
     display: flex;
     justify-content: center;
 }
-.inside-div-imfomiton{
+.inside-div-infomotion{
     height: 45px;
     width: 97%;
     background-color: white;
