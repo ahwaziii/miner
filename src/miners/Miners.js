@@ -15,12 +15,12 @@ function Miners() {
       <div className='all-item'>
         <div className='details'>
           <div className='detail-mine'>
-            <div className='div-imfomiton'><div className='inside-div-imfomiton'><p>Device:TH</p><p>{ i.DeviceTH}</p></div></div>
-            <div className='div-imfomiton'><div className='inside-div-imfomiton'><p>DailyProfit:</p><p>{ i.DailyProfit} </p></div></div>
-            <div className='div-imfomiton'><div className='inside-div-imfomiton'><p>UsdDailProfit:</p><p>{ i.UsdDailProfit}</p></div></div>
-            <div className='div-imfomiton'><div className='inside-div-imfomiton'><p>MontlyProfit:</p><p>{i.MontlyProfit }</p></div></div>
-            <div className='div-imfomiton'><div className='inside-div-imfomiton'><p>DailyCost</p><p>{i.DailyCost_ }</p></div></div>
-            <div className='div-imfomiton'><div className='inside-div-imfomiton'><p>DevicePrice</p><p>{i.DevicePrice }</p></div></div>
+            <div className='div-infomotion'><div className='inside-div-infomotion'><p>Device:TH</p><p>{ i.DeviceTH}</p></div></div>
+            <div className='div-infomotion'><div className='inside-div-infomotion'><p>DailyProfit:</p><p>{ i.DailyProfit} </p></div></div>
+            <div className='div-infomotion'><div className='inside-div-infomotion'><p>UsdDailProfit:</p><p>{ i.UsdDailProfit}</p></div></div>
+            <div className='div-infomotion'><div className='inside-div-infomotion'><p>MontlyProfit:</p><p>{i.MontlyProfit }</p></div></div>
+            <div className='div-infomotion'><div className='inside-div-infomotion'><p>DailyCost</p><p>{i.DailyCost_ }</p></div></div>
+            <div className='div-infomotion'><div className='inside-div-infomotion'><p>DevicePrice</p><p>{i.DevicePrice }</p></div></div>
           </div>
          
           </div>
