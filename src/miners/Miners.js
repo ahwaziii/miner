@@ -1,17 +1,35 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios';
+import { Outlet } from 'react-router-dom';
 import arr from '../Db';
 import "./Miners.css";
 function Miners() {
-    const [isLoading, setIsLoading] = useState(false);
-    const [data, setData] = useState(null);
+  const [modalLogin, setModalLogin] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch('http://178.252.171.198:8000/api/devices')
+      .then((data) => data.json())
+      .then((json) => setData(json))
+      .catch((err) => console.log(err))
+      .finally(setIsLoading(false),console.log(data))
+  }, [])
+  function LoginHandler(e) {
+    fetch('http://178.252.171.198:8000/authenticate')
+      .then((data) => data.json())
+      .then((json) => setData(json))
+      .catch((err) => console.log(err))
+      .finally(setIsLoading(false),console.log(data))
+  }
   const result = arr.map((i) => {
     return (
       <>
         <header className='header-miner'>
-
+            
         </header>
+        
+        
       <div className='all-item'>
         <div className='details'>
           <div className='detail-mine'>
@@ -53,7 +71,36 @@ function Miners() {
     if(isLoading){return <h1>please wait...</h1>}
   return (
     <div className='Miners'>
+      <button onClick={() => setModalLogin(true)}>Login</button>
+      {modalLogin &&
+        <>
+          <div className='div-modal-v'>
+          <div onClick={() => setModalLogin(false)} className='div-backdrop'>
+            
+          </div>
+                
+          <div className='div-modal'>
+            <div className='div-login-form'>
+              <form onSubmit={LoginHandler}>
+                <h1>Login</h1>
+                <div className='inputs-form'>
+              <div className='div-form-input-text'>                
+                  <input className='inputs' type={Text}></input><label>User Name</label>
+              </div>
+              <div className='div-form-input-password'>
+                  <input type={'password'}></input><label>Password</label>
+              </div>  
+                </div>
+                <input type={'submit'} />
+            </form>
+            </div>
+          </div>
+          </div>
+        </>
+          }
       <div className='body'>
+      
+      
         {result}
       </div>
       
