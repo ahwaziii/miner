@@ -1,19 +1,27 @@
 import './App.css';
 import Miners from './miners/Miners';
 import Navbar from './miners/Navbar';
-// import {BrowserRouter,Route,Routes} from 'react-router-dom';
+import {BrowserRouter,Route,Routes} from 'react-router-dom';
+import Weblayout from './Weblayout';
+import Context from './context';
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter>
+      <Context>
+      <BrowserRouter>
+        
         <Routes>
-          
-          <Route path='/' element={<Miners/>}>
+          <Route path='/' element={<Weblayout />}>
+
+            <Route path='/miner' element={<Miners />}>
+              
+
+          </Route>
           </Route>
         </Routes>
       </BrowserRouter>
-         */}
-      <Miners/>
+      </Context>
+      
     </div>
   );
 }

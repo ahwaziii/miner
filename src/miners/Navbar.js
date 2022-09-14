@@ -1,6 +1,11 @@
 import React from 'react'
 import './Navbar.css'
+import { useNavigate } from 'react-router';
+import { UseStateCount } from '../context';
+
 function Navbar() {
+    const { setModalLogin } = UseStateCount();
+    const navigate = useNavigate();
   return (
       <>
           <header>
@@ -9,7 +14,7 @@ function Navbar() {
                       <div className='login-singup'>
                           <div className='ul-login'>
                               <ul className='ul-inline'>
-                                  <li className='li-inline-login'>Login</li>
+                                  <li onClick={()=>setModalLogin(true)} className='li-inline-login'>Login</li>
                               </ul>
                           </div>
                           <div className='ul-singup'>
@@ -25,13 +30,13 @@ function Navbar() {
                   <img src='norobit.png' />
                   </div>
                   <ul className='ul-navbar'>
-                      <li>خانه</li>
-                      <li>امکانات</li>
-                      <li>ویژگی ها</li>
-                      <li>تعرفه ها</li>
-                      <li>سوالات متداول</li>
-                      <li>درباره ما</li>
                       <li>وبلاگ</li>
+                      <li>درباره ما</li>
+                      <li>سوالات متداول</li>
+                      <li>تعرفه ها</li>
+                      <li>ویژگی ها</li>
+                      <li>امکانات</li>
+                      <li onClick={()=>navigate('/miner')}>خانه</li>
                   </ul>
                   
               </div>

@@ -11,19 +11,22 @@
     justify-content: center;
 }
 .div-login-form{
+    
     position: relative;
     text-align: center;
     border-radius: 10px;
     margin-top: 80px;
     height: 360px;
-    width: 260px;
+    width: 70%;
     background-color: rgba(0, 0, 0,0.8);
-    padding: 65px;
+    padding: 30px;
 }
 .div-login-form h1{
     color: orange;
+    margin-top: 20px;
 }
 .inputs-form input{
+    margin-top: 20px;
     outline: none;
     padding: 10px 0;
     width: 100%;
@@ -34,6 +37,18 @@
     border-bottom: 1px solid #fff;
     font-size: 1rem; 
       
+}
+.inputs-form input:valid{
+    background-color: transparent;
+}
+.inputs-form input:default{
+    background-color: transparent;
+}
+.inputs-form input:focus{
+    background-color: transparent;
+}
+.inputs-form input:enabled{
+    background-color: transparent;
 }
 .inputs-form {
     position: relative;

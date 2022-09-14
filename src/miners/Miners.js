@@ -4,9 +4,12 @@ import axios from 'axios';
 import ModalLogin from './ModalLogin';
 import arr from '../Db';
 import "./Miners.css";
+import { UseStateCount } from '../context';
+
 // import { Route } from 'react-router-dom';
 function Miners() {
-  const [modalLogin, setModalLogin] = useState(false);
+  
+  const {modalLogin, setModalLogin} = UseStateCount();
     const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState(null);
   useEffect(() => {
@@ -23,14 +26,12 @@ function Miners() {
   //     .catch((err) => console.log(err))
   //     .finally(setIsLoading(false),console.log(data))
   // }
-  
+ 
   const result = arr.map((i) => {
     return (
       <>
         
-        <header className='header-miner'>
-            
-        </header>
+        
         
         
       <div className='all-item'>
@@ -74,7 +75,7 @@ function Miners() {
     if(isLoading){return <h1>please wait...</h1>}
   return (
     <div className='Miners'>
-      <button onClick={() => setModalLogin(true)}>Login</button>
+      
       {modalLogin &&
         
         <>

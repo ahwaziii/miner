@@ -76,6 +76,9 @@ header{
 .ul-navbar li:hover{
     color: #0052ea;
 }
+.li-inline-singup:hover{
+    color: #0052eab5;
+}
 .navbar-logo{
     display: inline-block;
     margin-right: 200px;
