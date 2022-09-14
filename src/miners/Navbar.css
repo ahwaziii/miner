@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+header{
+    position: relative;
+    
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgb(130 130 134 / 10%);
+    position: relative;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+}
+.header-body{
+    max-width: 1140px;
+    display: flex;
+    justify-content: right;
+}
+.container{ 
+    margin-left: auto !important;
+}
+.login-singup{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.ul-login{
+    display: flex;
+    margin-right: 10px;
+}
+    
+.ul-singup{
+    display: flex;
+}
+.ul-inline{ 
+    padding-left: 0;
+    list-style: none;
+}
+.li-inline-login{
+    display: inline-block;
+    color: #878388;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.li-inline-login:hover{
+    color: #595959;
+    
+}
+.li-inline-singup{
+    display: inline-block;
+    color: #0052ea;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.navbar{
+    display: flex;
+    justify-content: right;
+    margin-right: 160px;
+    flex-wrap: wrap;
+}
+.ul-navbar li{
+    display: inline-block;
+    padding: 20px;
+    color: #595959;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.ul-navbar li:hover{
+    color: #0052ea;
+}
+.navbar-logo{
+    display: inline-block;
+    margin-right: 200px;
+    
+}
+.navbar-logo img{
+    width: 250px;
+    height: 70px;
+}

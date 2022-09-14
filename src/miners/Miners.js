@@ -4,7 +4,7 @@ import axios from 'axios';
 import ModalLogin from './ModalLogin';
 import arr from '../Db';
 import "./Miners.css";
-import { Route } from 'react-router-dom';
+// import { Route } from 'react-router-dom';
 function Miners() {
   const [modalLogin, setModalLogin] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
