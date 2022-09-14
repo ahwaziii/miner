@@ -20,9 +20,9 @@
   
 .body{
     background-color: rgb(246, 246, 246);
-    width: 90%;
+    width: 98%;
     height: 100%;
-    margin: 5% 0% 0% 5%;
+    margin: 5% 0% 0% 1%;
     border-radius: 20px; 
     padding: 20px;
     display: flex;
@@ -32,16 +32,16 @@
     box-shadow: 0 0 30px rgba(254, 249, 249, 1);
 }
 .all-item{
-    height: 320px;
-    width: 470px;
+    height: 600px;
+    width: 294px;
     border-radius: 3px;
-    margin: 8px;
-    transition: all ease-in-out 0.5s;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 8px 2px 2px 8px;
+    
+    
+    justify-content: center;
     border: solid 1px rgb(222, 215, 205);
     box-shadow: 0 0 20px rgba(0, 0, 0,0.2);
+
 }
 .all-item:hover{
     
@@ -57,23 +57,30 @@
     border-radius: 3px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
 .contetnt-miner{
+    display: block;
     text-align: center;
     align-items: center;
     height: 150px;
     width: 170px;
 }
 .contetnt-miner img{
+    display: block;
     height: 150px;
-    width: 170px;
-    margin: 5px;
+    width: 290px;
+    
 }
 .name-miner a{
     font-weight: bold;
     color: rgb(69, 63, 63);
     text-decoration: none;
     transition: all ease-in-out 0.5s;
+}
+.imformison-miner{
+    margin-top: 20px;
 }
 .name-miner a:hover{
     color: hsl(24, 99%, 50% ,0.7);
@@ -115,6 +122,7 @@
     background-color: orange;
     display: flex;
     justify-content: center;
+    margin-left: 3px;
 }
 .inside-div-infomotion{
     height: 45px;

@@ -34,7 +34,12 @@ function Miners() {
         
         
         
-      <div className='all-item'>
+        <div className='all-item'>
+        <div className='contetnt-miner'>
+            <img src='https://iranmine.net/images/uploads/products/2021/08/21/20210821133703co.jpg' />
+            
+                 
+              </div>
         <div className='details'>
           <div className='detail-mine'>
             <div className='div-infomotion'><div className='inside-div-infomotion'><p>Device:TH</p><p>{ i.DeviceTH}</p></div></div>
@@ -42,15 +47,8 @@ function Miners() {
             <div className='div-infomotion'><div className='inside-div-infomotion'><p>UsdDailProfit:</p><p>{ i.UsdDailProfit}</p></div></div>
             <div className='div-infomotion'><div className='inside-div-infomotion'><p>MontlyProfit:</p><p>{i.MontlyProfit }</p></div></div>
             <div className='div-infomotion'><div className='inside-div-infomotion'><p>DailyCost</p><p>{i.DailyCost_ }</p></div></div>
-            <div className='div-infomotion'><div className='inside-div-infomotion'><p>DevicePrice</p><p>{i.DevicePrice }</p></div></div>
-          </div>
-         
-          </div>
-            <div className='div-miner'>
-              <div className='contetnt-miner'>
-            <img src='https://iranmine.net/images/uploads/products/2021/08/21/20210821133703co.jpg' />
-            
-                <div className='imformison-miner'>
+              <div className='div-infomotion'><div className='inside-div-infomotion'><p>DevicePrice</p><p>{i.DevicePrice}</p></div></div>
+              <div className='imformison-miner'>
                   <div className='name-miner'>
                    <a href='#'>خرید دستگاه ماینر {i.DeviceName}</a>
                 </div>
@@ -61,8 +59,12 @@ function Miners() {
                   <span className='sell-price'>20,000,000</span>
                   <span className='toman'>تومان</span>
                 </div>
-                </div> 
-              </div>
+                </div>
+          </div>
+         
+          </div>
+            <div className='div-miner'>
+              
             </div>
         </div>
 
@@ -76,18 +78,7 @@ function Miners() {
   return (
     <div className='Miners'>
       
-      {modalLogin &&
-        
-        <>
-          <div className='div-modal-v'>
-          <div onClick={() => setModalLogin(false)} className='div-backdrop'>
-            
-          </div>
-            <ModalLogin/>    
-          
-          </div>
-        </>
-          }
+      
       <div className='body'>
       
       

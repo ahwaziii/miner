@@ -2,9 +2,9 @@ import React from 'react'
 import './Navbar.css'
 import { useNavigate } from 'react-router';
 import { UseStateCount } from '../context';
-
+import ModalLogin from './ModalLogin';
 function Navbar() {
-    const { setModalLogin } = UseStateCount();
+    const {modalLogin, setModalLogin } = UseStateCount();
     const navigate = useNavigate();
   return (
       <>
@@ -42,6 +42,18 @@ function Navbar() {
               </div>
               
           </header>
+          {modalLogin &&
+        
+        <>
+          <div className='div-modal-v'>
+          <div onClick={() => setModalLogin(false)} className='div-backdrop'>
+            
+          </div>
+            <ModalLogin/>    
+          
+          </div>
+        </>
+          }
       </>
   )
 }
