@@ -14,7 +14,7 @@ function Miners() {
   const [data, setData] = useState(null);
   useEffect(() => {
     fetch('http://178.252.171.198:8000/api/devices')
-      .then((data) => data.json())
+      .then((src) => src.json())
       .then((json) => setData(json))
       .catch((err) => console.log(err))
       .finally(()=>{if(data){setIsLoading(false)}})

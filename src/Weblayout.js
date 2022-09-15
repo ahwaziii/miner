@@ -6,11 +6,13 @@ import { useNavigate } from 'react-router';
 
 function Weblayout() {
   const navigate = useNavigate()
-  
+  useEffect(() => {
+    navigate('/miner')
+  },[])
   return (
       <div>
       <Navbar />
-      <Miners/>
+      
       <Outlet />
     </div>
   )
