@@ -13,12 +13,13 @@ function Miners() {
     const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState(null);
   useEffect(() => {
-    fetch('http://178.252.171.198:8000/api/devices')
+    fetch('http://178.252.171.198:8000/api/devices',{method:'get'})
       .then((data) => data.json())
       .then((json) => setData(json))
       .catch((err) => console.log(err))
       .finally(setIsLoading(false),console.log(data))
   }, [])
+  if(isLoading)return<h1>pleaze wait...</h1>
   // function LoginHandler(e) {
   //   fetch('http://178.252.171.198:8000/authenticate')
   //     .then((data) => data.json())
@@ -27,7 +28,7 @@ function Miners() {
   //     .finally(setIsLoading(false),console.log(data))
   // }
  
-  const result = arr.map((i) => {
+  const result = data.map((i) => {
     return (
       <>
         
@@ -47,7 +48,7 @@ function Miners() {
             <div className='div-infomotion'><div className='inside-div-infomotion'><p>UsdDailProfit:</p><p>{ i.UsdDailProfit}</p></div></div>
             <div className='div-infomotion'><div className='inside-div-infomotion'><p>MontlyProfit:</p><p>{i.MontlyProfit }</p></div></div>
             <div className='div-infomotion'><div className='inside-div-infomotion'><p>DailyCost</p><p>{i.DailyCost_ }</p></div></div>
-              <div className='div-infomotion'><div className='inside-div-infomotion'><p>DevicePrice</p><p>{i.DevicePrice}</p></div></div>
+              
               <div className='imformison-miner'>
                   <div className='name-miner'>
                    <a href='#'>خرید دستگاه ماینر {i.DeviceName}</a>

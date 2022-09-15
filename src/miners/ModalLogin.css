@@ -18,7 +18,7 @@
     margin-top: 80px;
     height: 360px;
     width: 70%;
-    background-color: rgba(0, 0, 0,0.8);
+    background-color: rgba(152, 152, 152, 0.872);
     padding: 30px;
 }
 .div-login-form h1{
@@ -32,10 +32,11 @@
     width: 100%;
     letter-spacing: 1px;
     background-color: transparent;
-    color: inherit;
+    color: rgb(35, 23, 0);
     border: none;
     border-bottom: 1px solid #fff;
     font-size: 1rem; 
+    font-weight: bold;
       
 }
 .inputs-form input:valid{
@@ -62,3 +63,41 @@
     font-size: 1rem;
     pointer-events: none;
 }
+button {
+    display: inline-block;
+    background-color: orange;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 140px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px;
+  }
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  button:hover {
+    background-color: #ffc400;
+  }
+  button:hover span {
+    padding-right: 25px;
+  }
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

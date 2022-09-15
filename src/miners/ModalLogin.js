@@ -52,7 +52,7 @@ function ModalLogin() {
                   <input type={'password'} value={passwordValue} onChange={(e) => setPasswordValue(e.target.value)} ></input><label>Password</label>
               </div>  
                 </div>
-                <button onClick={submit}>Submit</button>
+                <button onClick={submit}><span>Submit</span></button>
             
             </div>
           </div>
