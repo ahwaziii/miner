@@ -13,13 +13,16 @@ function Miners() {
     const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState(null);
   useEffect(() => {
-    fetch('http://178.252.171.198:8000/api/devices',{method:'get'})
+    fetch('http://178.252.171.198:8000/api/devices')
       .then((data) => data.json())
       .then((json) => setData(json))
       .catch((err) => console.log(err))
-      .finally(setIsLoading(false),console.log(data))
-  }, [])
-  if(isLoading)return<h1>pleaze wait...</h1>
+      .finally(()=>{if(data){setIsLoading(false)}})
+  }, []);
+
+
+
+  if(isLoading)return<h1>please wait...</h1>
   // function LoginHandler(e) {
   //   fetch('http://178.252.171.198:8000/authenticate')
   //     .then((data) => data.json())
