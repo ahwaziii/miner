@@ -1,0 +1,153 @@
+.body-footer{
+    height: 550px;
+    width: 100%;
+    background-image: linear-gradient(150deg, #377dff 0%, #2d1582 100%);
+    display: flex;
+    justify-content: center;
+}
+.singup-footer{
+    width: 80%;
+    height: 340px;
+   
+    margin-top: 40px;
+} 
+.singup-footer p{
+    margin-top: 15px;
+    color: #ffffffb3;
+}
+.singup-footer h2{
+    margin-top: 15px;
+    color: white;
+    font-size: 40px;
+}
+#input-btn{
+    width: 270px;
+}
+#input-name{
+    width: 270px;
+}
+#input-shomare{
+    width: 270px;
+    
+}
+.infomotion-input{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.infomotion-inputs{
+    width: 78%;
+    height: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.infomotion-inputs input{
+    border-radius: 4px;
+    border: none;
+}
+.infomotion-inputs button {
+    border-radius: 4px;
+    border: none;
+}
+.hr-footer{
+    margin-top: 40px;
+    
+}
+.footer-logo img{
+    height: 150px;
+    width: 150px;
+}
+.footer-logo {
+    margin-top: 40px;
+    height: 150px;
+    width: 150px;
+}
+.footer-under{
+    width: 97%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-address{
+    margin-top: 25px;
+}
+.row a{
+    color: #ffffffb3;
+    font-size: 18px;
+    margin-left: 20px;
+    border-bottom: dotted 1px;
+    text-decoration: none;
+
+}
+.row a:hover{
+    color: white;
+}
+.row{
+    margin-left: 195px;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.footer-about{
+    height: 40px;
+    margin-top: 30px;
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.about-logo img{
+    width: 30px;
+    height: 31px;
+    margin-top: 5px;
+}
+.about-about{
+    width: 22%;
+    height: 100%;
+}
+.about-nashr{
+    display: flex;
+    justify-content: right;
+    width: 54%;
+    height: 100%;
+}
+.about-nashr p{
+    margin: 8px 4px;
+}
+.logos{
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+    background-color: #377dff80;
+    border-radius: 5px;
+}
+.logos:hover{
+    background-color: antiquewhite;
+}
+.about-about{
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffffb3;
+
+}
+.about-about li{
+    display: inline-block;
+    margin: 8px 0 0 20px;
+}
+.about-about li:hover{
+    color: white;
+    cursor: pointer;
+}

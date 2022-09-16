@@ -9,7 +9,7 @@ function ModalLogin() {
         const [passwordValue, setPasswordValue] = useState("");
         const cookies = new Cookies();
         const token = cookies.get("token");
-  const [user, setUser] = useState();
+        const [user, setUser] = useState();
         const submit = () => {
           fetch("http://178.252.171.198:8000/api/authenticate", {
             method: "POST",
@@ -52,7 +52,7 @@ function ModalLogin() {
                   <input type={'password'} value={passwordValue} onChange={(e) => setPasswordValue(e.target.value)} ></input><label>Password</label>
               </div>  
                 </div>
-                <button onClick={submit}><span>Submit</span></button>
+                <button className='btn-login' onClick={submit}><span>Submit</span></button>
             
             </div>
           </div>

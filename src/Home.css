@@ -1,0 +1,88 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+}
+.infomotion{
+    width: 50%;
+    height: 500px;
+
+    
+    justify-content: right;
+}
+.content-img {
+        display: flex;
+        width: 50%;
+        height: 400px;
+}
+.content-img img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.infomotion-text{
+    margin:100px 40px 0 100px;
+    text-align: right;
+   width: 70%;
+   height: 200px;
+   
+}
+.infomotion-input{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70px;
+
+}
+.infomotion-input input{
+width: 150px;
+height: 50px;
+font-size: 18px;
+z-index: 1;
+
+}
+.infomotion-input input::placeholder{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.infomotion-button{
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    font-size: 15px;
+    font-weight:bold;
+    background-color: #ffa500;
+    transition: 0.5s;
+}
+.infomotion-button:hover{
+    transform: translatey(-5px);
+    box-shadow: rgba(248, 173, 33, 0.615) -5px 5px,
+    rgba(248, 173, 33, 0.397) -10px 10px;
+    cursor: pointer;
+    
+    
+    
+    transition: 0.5s;
+    
+}
+.display-4{
+    font-size: 30px;
+    font-weight:350 ;
+}
+.infomotion-text p{
+    color: #797979;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.infomotion-text a {
+    color: #377dff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+#p-bold{
+    font-size: 20px;
+}

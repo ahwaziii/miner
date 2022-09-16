@@ -1,10 +1,10 @@
 import React from 'react'
 import './Navbar.css'
 import { useNavigate } from 'react-router';
-import { UseStateCount } from '../context';
+import { UseStateModalLogin } from '../context';
 import ModalLogin from './ModalLogin';
 function Navbar() {
-    const {modalLogin, setModalLogin } = UseStateCount();
+    const {modalLogin, setModalLogin } = UseStateModalLogin();
     const navigate = useNavigate();
   return (
       <>

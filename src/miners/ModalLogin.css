@@ -63,7 +63,7 @@
     font-size: 1rem;
     pointer-events: none;
 }
-button {
+btn-login {
     display: inline-block;
     background-color: orange;
     border-radius: 10px;
@@ -77,13 +77,13 @@ button {
     cursor: pointer;
     margin: 20px;
   }
-  button span {
+  btn-login span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
-  button span:after {
+  btn-login span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -91,13 +91,13 @@ button {
     right: -20px;
     transition: 0.5s;
   }
-  button:hover {
+  btn-login:hover {
     background-color: #ffc400;
   }
-  button:hover span {
+  btn-login:hover span {
     padding-right: 25px;
   }
-  button:hover span:after {
+  btn-login:hover span:after {
     opacity: 1;
     right: 0;
   }

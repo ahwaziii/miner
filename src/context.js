@@ -1,16 +1,19 @@
 import React, { createContext, useState } from 'react'
 import { useContext } from 'react';
 const context = createContext();
+const login = createContext();
+
 
 function Context({children}) {
     const [modalLogin, setModalLogin] = useState(false);
-    return (
-      <context.Provider value={{modalLogin,setModalLogin}}>{children }</context.Provider>  
-    )
+    const [user, setUser] = useState();
+  return (
+    <context.Provider value={{ modalLogin, setModalLogin ,user}}>{children}</context.Provider> 
     
+    )   
 }
-function UseStateCount() {
+function UseStateModalLogin() {
   return useContext(context);
 }
-export {UseStateCount}
+export {UseStateModalLogin}
 export default Context
